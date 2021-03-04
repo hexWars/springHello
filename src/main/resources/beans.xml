@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--    id = 变量名
+            class = 对象本身,只能写实体类,不能写接口-->
+    <bean id="hello" class="com.Cai.pojo.Hello">
+        <property name="string" value="Spring"/>
+    </bean>
+
+    <bean id="address" class="com.Cai.pojo.Address">
+        <property name="address" value="厦门"/>
+    </bean>
+
+    <bean id="student" class="com.Cai.pojo.Student">
+<!--        第一种普通值注入-->
+        <property name="name" value="cwj"/>
+<!--        第二种bean注入-->
+        <property name="address" ref="address"/>
+<!--        数组-->
+        <property name="books">
+            <array>
+                <value>asdf</value>
+                <value>qwer</value>
+                <value>ferjoifjsda</value>
+            </array>
+        </property>
+<!--        list-->
+        <property name="hobbys">
+            <list>
+                <value>asdf</value>
+                <value>gjirjg</value>
+                <value>gutjgkd</value>
+            </list>
+        </property>
+<!--        map-->
+        <property name="cards">
+            <map>
+                <entry key="a" value="f"/>
+                <entry key="s" value="g"/>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>aaa</value>
+                <value>ititih</value>
+                <value>gjjgj</value>
+            </set>
+        </property>
+<!--        null-->
+        <property name="wife">
+            <null/>
+        </property>
+<!--        properties-->
+        <property name="info">
+            <props>
+                <prop key="学号">1901030077</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
