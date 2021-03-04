@@ -7,6 +7,13 @@
 <!--    p空间注入-->
     <bean id="user" class="com.Cai.pojo.User" p:name="ccc" p:age="12"/>
 <!--    c空间注入,需要构造器-->
-    <bean id="user2" class="com.Cai.pojo.User" c:name="c22" c:age="22"/>
+    <bean id="user2" class="com.Cai.pojo.User" c:name="c22" c:age="22" scope="prototype"/>
+<!--    singleton单例模式-->
+<!--    prototype原型模式-->
+<!--    在web中才能用的-->
+<!--    request,单次请求生效-->
+<!--    session,在session生效-->
+<!--    application,全局生效-->
 
 </beans>
+

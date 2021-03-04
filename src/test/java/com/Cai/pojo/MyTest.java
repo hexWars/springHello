@@ -1,7 +1,5 @@
 package com.Cai.pojo;
 
-import com.Cai.pojo.Hello;
-import com.Cai.pojo.Student;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -32,3 +30,4 @@ public class MyTest {
         System.out.println(user1);
     }
 }
+
