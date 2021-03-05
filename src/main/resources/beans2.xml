@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="cat" class="com.Cai.pojo.Cat"/>
+    <bean id="dog" class="com.Cai.pojo.Dog"/>
+
+    <bean id="people" class="com.Cai.pojo.People" autowire="byName">
+        <property name="name" value="cwwww"/>
+    </bean>
+    <bean id="people" class="com.Cai.pojo.People" autowire="byType">
+        <property name="name" value="cwwww"/>
+    </bean>
+<!--    byName可以根据值查找自动装配-->
+<!--    byType根据类型查找,甚至可以省去id,但是一个类型多个对象的时候会报错-->
+</beans>
+

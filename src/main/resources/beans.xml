@@ -10,9 +10,7 @@
         <property name="string" value="Spring"/>
     </bean>
 
-    <bean id="address" class="com.Cai.pojo.Address">
-        <property name="address" value="厦门"/>
-    </bean>
+    <bean id="address" class="com.Cai.pojo.Address"/>
 
     <bean id="student" class="com.Cai.pojo.Student">
 <!--        第一种普通值注入-->

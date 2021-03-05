@@ -6,6 +6,6 @@
 
     <import resource="beans.xml"/>
     <import resource="userbeans.xml"/>
-
+    <import resource="beans2.xml"/>
 
 </beans>
